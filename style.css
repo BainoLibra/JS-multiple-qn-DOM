@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    margin: 30px;
+}
+#one{
+    margin-top: 40px;
+}
+#two{
+    margin-top: 40px;
+}
+#three{
+    margin-top: 40px;
+}
+#four{
+    margin-top: 40px;
+}
+#five{
+    margin-top: 40px;
+}
+span{
+    background-color: grey;
+}

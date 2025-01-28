@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="one">
+            <h1>JavaScript DOM Test</h1>
+            <p class="questions">Question 1: Multiple Choice</p>
+            <p>What does DOM stand for in JavaScript</p>
+            <!-- <p>a) Document Object Model</p>
+            <p>b) Data Object Manager</p>
+            <p>c) Dynamic Object Method</p>
+            <p>d) Document Organizational Module</p> -->
+            <p><input type="radio"> Document Object Model</p>
+            <p><input type="radio"> Data Object Manager</p>
+            <p><input type="radio"> Dynamic Object Method</p>
+            <p><input type="radio"> Document Organizational Module</p>
+        </div>
+        <div id="two">
+            <p class="questions">Question 2: Multiple Choice</p>
+            <p>The..............method is used to select the first HTML element that matches a CSS selector.</p>
+            <!-- <p>a) getElementByID()</p>
+            <p>b) querySelector()</p>
+            <p>c) getElementByTagName()</p>
+            <p>d) getElementByClassName()</p> -->
+            <p><input type="radio"> getElementByID()</p>
+            <p><input type="radio"> querySelector()</p>
+            <p><input type="radio"> getElementByTagName()</p>
+            <p><input type="radio"> getElementByClassName()</p>
+        </div>
+        <div id="three">
+            <p class="questions">Question 3: Multiple Choice</p>
+            <p>The innerHTML property can be used to set text content and HTML markup inside an element.</p>
+            <!-- <p>a) True</p>
+            <p>b) False</p> -->
+            <p><input type="radio"> True</p>
+            <p><input type="radio"> False</p>
+        </div>
+        <div id="four">
+            <p class="questions">Question 4: Code Output</p>
+            <p>What will the following code output to the consel?</p>
+            <p>document.addEventListener ('click' function, (){ <br> console.log('The document was clicked!'); <br>});</p>
+            <!-- <p>a) Nothing happens.</p>
+            <p>b) The message "The document was clicked!" is displayed when you click anywhere on the page.</p>
+            <p>c) The Message "The document was clicked!" appears when the page is loaded.</p>
+            <p>d) The Message "The document was clicked!" appears when a button is clicked.</p> -->
+            <p><input type="radio"> Nothing happens.</p>
+            <p><input type="radio"> The message "The document was clicked!" is displayed when you click anywhere on the page.</p>
+            <p><input type="radio"> The Message "The document was clicked!" appears when the page is loaded.</p>
+            <p><input type="radio"> The Message "The document was clicked!" appears when a button is clicked.</p>
+        </div>
+        <div id="five">
+            <p class="questions">Question 5: Multiple Choice</p>
+            <p>What is the correct JavaScript code to change the background color of a <span>< div ></div></span> element with ID <span>box</span> to blue?</p>
+            <!-- <p>a) <br> let box = document.getElementById ('box'); <br> box.style.color ='blue';</p>
+            <p>b) <br> let box = document.querySelector ('#box'); <br> box.style.backgroundColor ='blue';</p>
+            <p>c) <br> document.getElementByClassName('box').style.backgroundColor ='blue';</p>
+            <p>d) <br> document.querySelector('box').background ='blue';</p> -->
+            <p><input type="radio"> let box = document.getElementById ('box'); <br> box.style.color ='blue';</p>
+            <p><input type="radio"> let box = document.querySelector ('#box'); <br> box.style.backgroundColor ='blue';</p>
+            <p><input type="radio"> document.getElementByClassName('box').style.backgroundColor ='blue';</p>
+            <p><input type="radio"> document.querySelector('box').background ='blue';</p>
+        </div>
+    </div>
+    <script>
+        document.body.style.border ="bold"
+        document.body.style.borderColor ="grew"
+        document.body.style.borderRadius ="5px"
+        let pElement =document.getElementsByClassName('questions')
+        for (let element of pElement){
+            element.style.fontWeight ='bold';
+        }
+    </script>
+</body>
+</html>
