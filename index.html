@@ -51,6 +51,21 @@
             <p class="wrong"><input type="radio" name="q5"> document.getElementByClassName('box').style.backgroundColor ='blue';</p>
             <p class="wrong"><input type="radio" name="q5"> document.querySelector('box').background ='blue';</p>
         </div>
+       <div>
+        <div>
+            <h2>intro</h2>
+            <h2>DOM</h2>
+            <h2>JS</h2>
+        </div>
+        <div class="text">
+            <h3 class="message">intro</h3>
+            <h3 class="message">DOM</h3>
+            <h3 class="message">JS</h3>
+        </div>
+       </div>
+       <div>
+        <p><button id="btna" type="button">a)</button> what is DOM?</p>
+       </div>
     </div>
     <script>
         // Style the body
@@ -108,6 +123,53 @@
             li.textContent = text;
             olElement.appendChild(li);
         });
+
+        // let correctAnswercolor;
+        // if (questions.correctAnswer <5){
+        //     questions.correctAnswercolor ='green';
+        // } else (questions.wrongAnswer<10){
+        //     questions.correctAnswercolor ='blue';
+        // }
+        let btnElement =document.getElementsByName('q1');
+        for (button of btnElement){
+            button.style.backgroundColor ='red'
+        }
+
+        let button =document.getElementsByName('q4');
+        console.log(button)
+
+        // let elementh2 =document.getElementsByTagName('h2')
+        // for (let elementsh2 of elementh2){
+        //     elementsh2.document.style.color ='red'
+        // }
+
+        let messElement =document.getElementsByClassName('message');
+        for (let mess of messElement){
+            mess.style.backgroundColor='green';
+            mess.style.border='bold';
+            mess.style.borderColor='black';
+            mess.style.borderRadius='5px'
+        }
+
+        let message =document.querySelector(".message")
+        console.log(message.parentNode)
+        let parent =document.querySelector(".text")
+        console.log(parent.firstChild);
+        console.log(parent.lastChild)
+        
+        let div =document.createElement("div");
+        div.innerHTML = "<P> Welcome to JS DOM </P>";
+        document.body.appendChild(div);
+
+        let pElement =document.getElementsByClassName("wrong");
+        console.log(pElement.getAttribute(type))
+
+        let buttona =document.getElementById('btna');
+        for (let btnaElement of buttona){
+            btnaElement.style.borderRadius ='50%';
+            btnaElement.style.border ='bold';
+            btnaElement.style.padding ='0.2rem';
+        }
     </script>
 </body>
 </html>
