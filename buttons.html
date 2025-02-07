@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="checkbox" name="card" id="pay">
+        <label for="checkbox">subscribe</label> <br><br>
+
+        <input type="checkbox" name="card" id="visa">
+        <label for="visacard">Visa</label><br><br>
+
+        <input type="radio" name="mastercard" id="master">
+        <label for="mastercardbtn">mastercard</label><br><br>
+
+        <input type="radio" name="mastercard" id="pay">
+        <label for="pay">paypal</label><br><br>
+
+        <input type="button" value="submit" id="button">
+
+        <p id="subResult"></p>
+        <p id="paymateResults"></p>
+    </div>
+    <script>
+        let checkbox =document.getElementById('pay');
+        let check =document.getElementById('visa');
+        let radio =document.getElementById('master');
+        let btn =document.getElementById('button');
+        let sub =document.getElementById('subResult');
+        let pay =document.getElementById('paymateResults');
+
+        btn.onclick = function(){
+            if(checkbox.checked){
+                subResult.textContent = 'you are subscribed';
+            } else {
+                subResult.textContent = 'you are not subscribed';
+            }
+
+            if (check.checked){
+                paymateResults.textContent ='you are paying with visa';
+            } else if(radio.checked){
+                paymateResults.textContent ='you are to pay using mastercard';
+            } else {
+                paymateResults.textcontent ='you are paying with paypal'
+            }
+
+            if (btn.onclick){
+                btn.style.backgroundColor ='green'
+                btn.style.border ='none'
+                btn.style.borderRadius ='5PX'
+                btn.style.padding ='1.2rem'
+            }
+        }
+    </script>
+</body>
+</html>
