@@ -10,47 +10,47 @@
         <div class="js-qn">
             <p class="questions">Question 1: Multiple Choice</p>
             <p>What does DOM stand for in JavaScript</p>
-            <P><input class="correct" id="one" type="checkbox"></input> <label for="one"> Document Object Model</label></P>
-            <P><input class="correct" id="two" type="checkbox"></input> <label for="two"> Data Object Manager</label></P>
-            <P><input class="correct" id="three" type="checkbox"></input> <label for="three"> Dynamic Object Method</label></P>
-            <P><input class="correct" id="four" type="checkbox"></input> <label for="four"> Document Organizational Module</label></P>
+            <P><input class="answers" id="one" type="checkbox"></input> <label for="one"> Document Object Model</label></P>
+            <P><input class="answers" id="two" type="checkbox"></input> <label for="two"> Data Object Manager</label></P>
+            <P><input class="answers" id="three" type="checkbox"></input> <label for="three"> Dynamic Object Method</label></P>
+            <P><input class="answers" id="four" type="checkbox"></input> <label for="four"> Document Organizational Module</label></P>
         </div>
         <div class="js-qn">
             <p class="questions">Question 2: Multiple Choice</p>
             <p>The..............method is used to select the first HTML element that matches a CSS selector.</p>
-            <P><input class="correct" id="five" type="checkbox"></input> <label for="five"> getElementByID()</label></P>
-            <P><input class="correct" id="six" type="checkbox"></input> <label for="six"> querySelector()</label></P>
-            <P><input class="correct" id="seven" type="checkbox"></input> <label for="seven"> getElementByTagName()</label></P>
-            <P><input class="correct" id="eight" type="checkbox"></input> <label for="eight"> getElementByClassName()</label></P>
+            <P><input class="answers" id="five" type="checkbox"></input> <label for="five"> getElementByID()</label></P>
+            <P><input class="answers" id="six" type="checkbox"></input> <label for="six"> querySelector()</label></P>
+            <P><input class="answers" id="seven" type="checkbox"></input> <label for="seven"> getElementByTagName()</label></P>
+            <P><input class="answers" id="eight" type="checkbox"></input> <label for="eight"> getElementByClassName()</label></P>
         </div>
         <div class="js-qn">
             <p class="questions">Question 3: Multiple Choice</p>
             <p>The innerHTML property can be used to set text content and HTML markup inside an element.</p>
-            <P><input class="correct" id="nine" type="checkbox"></input> <label for="nine"> True</label></P>
-            <P><input class="correct" id="ten" type="checkbox"></input> <label for="ten"> False</label></P>
+            <P><input class="answers" id="nine" type="checkbox"></input> <label for="nine"> True</label></P>
+            <P><input class="answers" id="ten" type="checkbox"></input> <label for="ten"> False</label></P>
         </div>
         <div class="js-qn">
             <p class="questions">Question 4: Code Output</p>
             <p>What will the following code output to the consel?</p>
             <p>document.addEventListener ('click' function, (){ <br> console.log('The document was clicked!'); <br>});</p>
-            <P><input class="correct" id="eleven" type="checkbox"></input> <label for="eleven"> Nothing happens.</label></P>
-            <P><input class="correct" id="tweleve" type="checkbox"></input> <label for="tweleve"> The message "The document was clicked!" is displayed when you click anywhere on the page.</label></P>
-            <P><input class="correct" id="thirteen" type="checkbox"></input> <label for="thirteen"> The Message "The document was clicked!" appears when the page is loaded.</label></P>
-            <P><input class="correct" id="fourteen" type="checkbox"></input> <label for="fourteen"> The Message "The document was clicked!" appears when a button is clicked.</label></P>
+            <P><input class="answers" id="eleven" type="checkbox"></input> <label for="eleven"> Nothing happens.</label></P>
+            <P><input class="answers" id="twelve" type="checkbox"></input> <label for="tweleve"> The message "The document was clicked!" is displayed when you click anywhere on the page.</label></P>
+            <P><input class="answers" id="thirteen" type="checkbox"></input> <label for="thirteen"> The Message "The document was clicked!" appears when the page is loaded.</label></P>
+            <P><input class="answers" id="fourteen" type="checkbox"></input> <label for="fourteen"> The Message "The document was clicked!" appears when a button is clicked.</label></P>
         </div>
         <div class="js-qn">
             <p class="questions">Question 5: Multiple Choice</p>
             <p>What is the correct JavaScript code to change the background color of a <span>< div ></span> element with ID <span>box</span> to blue?</p>
-            <P><input class="correct" id="fifteen" type="checkbox"></input> <label for="fifteen"> let box = document.getElementById ('box'); <br> box.style.color ='blue';</label></P>
-            <P><input class="correct" id="sixteen" type="checkbox"></input> <label for="sixteen"> let box = document.querySelector ('#box'); <br> box.style.backgroundColor ='blue';</label></P>
-            <P><input class="correct" id="seventeen" type="checkbox"></input> <label for="seventeen"> document.getElementByClassName('box').style.backgroundColor ='blue';</label></P>
-            <P><input class="correct" id="eighteen" type="checkbox"></input> <label for="eighteen"> document.querySelector('box').background ='blue';</label></P>
+            <P><input class="answers" id="fifteen" type="checkbox"></input> <label for="fifteen"> let box = document.getElementById ('box'); <br> box.style.color ='blue';</label></P>
+            <P><input class="answers" id="sixteen" type="checkbox"></input> <label for="sixteen"> let box = document.querySelector ('#box'); <br> box.style.backgroundColor ='blue';</label></P>
+            <P><input class="answers" id="seventeen" type="checkbox"></input> <label for="seventeen"> document.getElementByClassName('box').style.backgroundColor ='blue';</label></P>
+            <P><input class="answers" id="eighteen" type="checkbox"></input> <label for="eighteen"> document.querySelector('box').background ='blue';</label></P>
         </div>
 
         <div><input type="button" id="submitbtn" value="submit"></div>
 
         <p id="correctans"></p>
-        <p id="wrongans"></p>
+        <p id="results"></p>
     </div>
     <script>
         // document.body.style.margin ='30px';
@@ -77,7 +77,7 @@
         const nines=document.getElementById('nine');
         const tens =document.getElementById('ten');
         const elevens =document.getElementById('eleven');
-        const twelevens =document.getElementById('tweleve');
+        const twelevens =document.getElementById('twelve');
         const thirteens =document.getElementById('thirteen');
         const fourteens =document.getElementById('fourteen');
         const fifteens =document.getElementById('fifteen');
@@ -85,22 +85,48 @@
         const seventeens =document.getElementById('seventeen');
         const eighteens =document.getElementById('eighteen');
         const correctanss =document.getElementById('correctans');
-        const wronganss =document.getElementById('wrongans');
+        // const wronganss =document.getElementById('wrongans');
         const submitbtns =document.getElementById('submitbtn');
 
+        let correctans =['one', 'six', 'nine', 'twelve', 'sixteen'];
+        let selectedAnswrers =[];
+        let checkboxes =document.querySelectorAll('.answers');
 
         submitbtns.onclick =function(){
-            if(ones.checked){
-                correctanss.textContent ='correct'
-            } else{
-                correctanss.textContent ='wrong'
-            }
-            if (twos.checked){
-                wronganss.textContent ='wrong'
-            } else {
-                wronganss.textContent ='correct'
+            checkboxes.forEach(checkbox =>{
+                if (checkbox.checked){
+                    selectedAnswrers.push(checkbox.id)
+                }
+            })
+            for (let i=0; i<selectedAnswrers.length; i++){
+                if (selectedAnswrers[i] === correctans[i]){
+                    correctanss.textContent ='correct'
+                } else{
+                    correctanss.textContent ='wrong'
+                }
             }
         }
+
+
+
+        // checkboxes.forEach(checkbox =>{
+        //     if (checkbox.checked){
+        //         selectedAnswrers.push(checkbox.id)
+        //     }
+        // })
+
+        // submitbtns.onclick =function(){
+        //     if(ones.checked){
+        //         correctanss.textContent ='correct'
+        //     } else{
+        //         correctanss.textContent ='wrong'
+        //     }
+        //     if (twos.checked){
+        //         wronganss.textContent ='wrong'
+        //     } else {
+        //         wronganss.textContent ='correct'
+        //     }
+        // }
 
         submitbtns.style.backgroundColor ='green'
         submitbtns.style.margin ='0px 300px 50px'
