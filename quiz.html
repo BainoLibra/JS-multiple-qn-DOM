@@ -91,7 +91,17 @@
         let correctans =['one', 'six', 'nine', 'twelve', 'sixteen'];
         let selectedAnswrers =[];
         let checkboxes =document.querySelectorAll('.answers');
-
+        // submitbtns.addEventListener('click', ()=>{
+        //     selectedAnswrers=[];
+        //     checkboxes.forEach(checkbox=>{
+        //         if(checkbox.checked ==true){
+        //             selectedAnswrers.push(checkbox.value)
+        //         }
+        //     })
+        // })
+        
+        
+        
         submitbtns.onclick =function(){
             checkboxes.forEach(checkbox =>{
                 if (checkbox.checked){
